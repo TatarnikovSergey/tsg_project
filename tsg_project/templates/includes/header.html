@@ -1,14 +1,15 @@
+{% load static %}
 <header>
-      <nav id="top-nav">
+      <nav class="navbar" id="top-nav">
         <ul>
-          <li class="nav-item active">
-            <a href="/">Главная страница</a>
+          <li class="nav-item">
+            <a class="nav-link active" href="/">Главная страница</a>
           </li>
           <li class="nav-item">
-            <a href="{% url 'catalog:list' %}">Каталог</a>
+            <a class="nav-link" href="{% url 'catalog:list' %}">Каталог</a>
           </li>
           <li class="nav-item">
-            <a href="about/">О сайте</a>
+            <a class="nav-link" href="about/">О сайте</a>
           </li>
         </ul>
       </nav>
