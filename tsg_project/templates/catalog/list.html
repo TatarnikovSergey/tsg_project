@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content-main %}
+  <div class="row">
+    {% for unit in data %}
+    <div class="col-3" style="background: green; margin: 20px; padding: 100px;">
+      <a href="{% url 'catalog:detail' unit.id %}"> {{ unit.title }}</a></div>
+    {% endfor %}}
+  </div>
+{% endblock %}
